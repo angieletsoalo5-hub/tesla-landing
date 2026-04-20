@@ -15,59 +15,40 @@
         header {
             display: flex;
             justify-content: space-between;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            background: rgba(0,0,0,0.5);
-        }
-
-        header h2 {
-            color: white;
+            padding: 15px;
+            background-color: lightgray;
         }
 
         nav a {
             margin: 0 10px;
             text-decoration: none;
-            color: white;
+            color: black;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        /* Hero Section (TESLA STYLE 🔥) */
+        /* Hero Section */
         .hero {
-            height: 100vh;
+            height: 90vh;
             background:
-                linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url("https://images.unsplash.com/photo-1706740425990-02e7c5a2c3fd") no-repeat center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+                linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") no-repeat center/cover;
             text-align: center;
+            padding-top: 100px;
             color: white;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-        }
-
-        .buttons {
-            margin-top: 20px;
+            font-size: 2.5rem;
         }
 
         .btn {
-            padding: 12px 30px;
+            padding: 10px 20px;
             margin: 10px;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
         }
 
         .primary {
@@ -77,43 +58,36 @@
 
         .secondary {
             background-color: white;
-            color: black;
+            border: 1px solid black;
         }
 
         .btn:hover {
-            opacity: 0.8;
+            background-color: gray;
         }
 
         /* Models Section */
         .models {
             text-align: center;
-            padding: 50px 20px;
+            padding: 30px;
         }
 
         .model-list {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
         }
 
         .model {
-            padding: 25px;
-            background-color: #f2f2f2;
+            padding: 20px;
+            background-color: #eee;
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             background-color: black;
             color: white;
-        }
-
-        /* Responsive (bonus marks ⭐) */
-        @media (max-width: 768px) {
-            .model-list {
-                flex-direction: column;
-            }
         }
     </style>
 </head>
@@ -131,12 +105,10 @@
 
 <section class="hero">
     <h1>Drive the Future</h1>
-    <p>Electric. Powerful. Simple.</p>
+    <p>Simple. Electric. Powerful.</p>
 
-    <div class="buttons">
-        <button class="btn primary">Order Now</button>
-        <button class="btn secondary">Learn More</button>
-    </div>
+    <button class="btn primary">Order Now</button>
+    <button class="btn secondary">Learn More</button>
 </section>
 
 <section class="models">
