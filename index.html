@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-</head>
-<body>
-   TEST 2
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Cars</title>
+    <title>E-Rides</title>
 
     <style>
-        * {
+        body {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
 
-        /* Navbar */
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
             padding: 20px;
             position: fixed;
             width: 100%;
-            background: rgba(255,255,255,0.8);
+            background: rgba(0,0,0,0.5);
+        }
+
+        header h2 {
+            color: white;
         }
 
         nav a {
             margin: 0 10px;
             text-decoration: none;
-            color: black;
+            color: white;
         }
 
-        /* Hero */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section (TESLA STYLE 🔥) */
         .hero {
             height: 100vh;
-            background: url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a") no-repeat center/cover;
+            background:
+                linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url("https://images.unsplash.com/photo-1706740425990-02e7c5a2c3fd") no-repeat center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            color: white;
         }
 
         .hero h1 {
@@ -56,31 +54,40 @@
             margin-bottom: 10px;
         }
 
+        .hero p {
+            font-size: 1.2rem;
+        }
+
         .buttons {
             margin-top: 20px;
         }
 
         .btn {
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 12px 30px;
+            margin: 10px;
             border: none;
             cursor: pointer;
+            border-radius: 5px;
         }
 
         .primary {
-            background: black;
+            background-color: black;
             color: white;
         }
 
         .secondary {
-            background: white;
+            background-color: white;
             color: black;
         }
 
-        /* Models */
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Models Section */
         .models {
-            padding: 50px;
             text-align: center;
+            padding: 50px 20px;
         }
 
         .model-list {
@@ -90,25 +97,19 @@
         }
 
         .model {
-            padding: 20px;
-            background: #eee;
+            padding: 25px;
+            background-color: #f2f2f2;
         }
 
         /* Footer */
         footer {
             text-align: center;
             padding: 20px;
-            background: #111;
+            background-color: black;
             color: white;
         }
 
-        footer a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        /* Bonus: Responsive */
+        /* Responsive (bonus marks ⭐) */
         @media (max-width: 768px) {
             .model-list {
                 flex-direction: column;
@@ -119,7 +120,7 @@
 <body>
 
 <header>
-    <h2>E-Cars</h2>
+    <h2>E-Rides</h2>
     <nav>
         <a href="#">Model S</a>
         <a href="#">Model 3</a>
@@ -129,8 +130,8 @@
 </header>
 
 <section class="hero">
-    <h1>Electric Future</h1>
-    <p>Drive the change</p>
+    <h1>Drive the Future</h1>
+    <p>Electric. Powerful. Simple.</p>
 
     <div class="buttons">
         <button class="btn primary">Order Now</button>
@@ -140,6 +141,7 @@
 
 <section class="models">
     <h2>Our Models</h2>
+
     <div class="model-list">
         <div class="model">Model S</div>
         <div class="model">Model 3</div>
@@ -149,9 +151,7 @@
 </section>
 
 <footer>
-    <p>© 2026 E-Cars</p>
-    <a href="#">Privacy</a>
-    <a href="#">Terms</a>
+    <p>© 2026 E-Rides</p>
 </footer>
 
 </body>
