@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<body>
+   TEST 2
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cars</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: rgba(255,255,255,0.8);
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Hero */
+        .hero {
+            height: 100vh;
+            background: url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a") no-repeat center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .primary {
+            background: black;
+            color: white;
+        }
+
+        .secondary {
+            background: white;
+            color: black;
+        }
+
+        /* Models */
+        .models {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .model-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .model {
+            padding: 20px;
+            background: #eee;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Bonus: Responsive */
+        @media (max-width: 768px) {
+            .model-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>E-Cars</h2>
+    <nav>
+        <a href="#">Model S</a>
+        <a href="#">Model 3</a>
+        <a href="#">Model X</a>
+        <a href="#">Model Y</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Electric Future</h1>
+    <p>Drive the change</p>
+
+    <div class="buttons">
+        <button class="btn primary">Order Now</button>
+        <button class="btn secondary">Learn More</button>
+    </div>
+</section>
+
+<section class="models">
+    <h2>Our Models</h2>
+    <div class="model-list">
+        <div class="model">Model S</div>
+        <div class="model">Model 3</div>
+        <div class="model">Model X</div>
+        <div class="model">Model Y</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 E-Cars</p>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+</footer>
+
+</body>
+</html>
