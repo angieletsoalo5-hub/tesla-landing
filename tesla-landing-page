@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tesla Clone</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+/* SECTIONS */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* overlay */
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 25px;
+    border: none;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+.light {
+    background: white;
+    color: black;
+}
+
+/* REAL TESLA IMAGES (WIKIMEDIA) */
+.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Tesla_Model_S_02_2013.jpg') center/cover;
+}
+
+.model3 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Tesla_Model_3_parked%2C_front_driver_side.jpg') center/cover;
+}
+
+.modelx {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Tesla_Model_X_90D.jpg') center/cover;
+}
+
+.modely {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Tesla_Model_Y_front.jpg') center/cover;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>TESLA</h2>
+    <ul>
+        <li>Model S</li>
+        <li>Model 3</li>
+        <li>Model X</li>
+        <li>Model Y</li>
+    </ul>
+</nav>
+
+<section class="section hero">
+    <div class="content">
+        <h1>Model S</h1>
+        <button class="btn dark">Order Now</button>
+        <button class="btn light">Learn More</button>
+    </div>
+</section>
+
+<section class="section model3">
+    <div class="content">
+        <h1>Model 3</h1>
+        <button class="btn dark">Order Now</button>
+    </div>
+</section>
+
+<section class="section modelx">
+    <div class="content">
+        <h1>Model X</h1>
+        <button class="btn dark">Order Now</button>
+    </div>
+</section>
+
+<section class="section modely">
+    <div class="content">
+        <h1>Model Y</h1>
+        <button class="btn dark">Order Now</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Tesla Clone | Designed by Angie</p>
+</footer>
+
+</body>
+</html>
